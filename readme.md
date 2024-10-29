@@ -47,3 +47,19 @@ where:
 
 The main difference between Q-learning and Sarsa is that Q-learning is an off-policy algorithm, while Sarsa is an on-policy algorithm.
 Which means that Q-learning only needs (S,A,R,S') to update the Q-value {actually it also uses (S,A,R,S',A') pair, but A' is not sampled. We use greedy strategy to choose the action A' based on our "experience".}, while Sarsa needs real (S,A,R,S',A') pair to update the Q-value. And this difference can be found in main.py.
+
+## Inplementation detail
+- **state**: The state is represented by the coordinate of the agent.
+- **action**: The action is represented by the direction of the agent's movement.
+- **reward**: The reward is set as -1 for each step, and 10 for reaching the goal.
+- **Q-value**: The Q-value is initialized as 0 for each state-action pair.
+- **policy**: The policy is set as epsilon-greedy policy. The epsilon is set as 0.1.
+- **learning rate**: The learning rate is set as 0.1.
+- **discount factor**: The discount factor is set as 0.9.
+
+
+## Structure of the code
+- **maze.py**: The maze environment setting. Responsible for the maze setting, the agent's movement, and the reward setting.
+- **agent.py**: The agent setting. Responsible for the agent's action selection, the Q-value update, and the policy setting.
+- **main.py**: The main function. Responsible for the training process and the visualization of the training process.
+
