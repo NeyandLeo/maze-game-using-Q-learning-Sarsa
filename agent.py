@@ -1,5 +1,4 @@
 import numpy as np
-from MLP import MLP
 class QLearningAgent:
     def __init__(self, actions, alpha=0.1, gamma=0.9, epsilon=0.1):
         self.actions = actions
