@@ -8,7 +8,8 @@ The agent can move in four directions: up, down, left, right. The agent can get 
 ## Introduction to Q-learning and Sarsa
 #### Q-value Function
 
-The Q-value function is defined as: Q(s, a) = R(s, a) + γ max_a' Q(s', a')
+The Bellman Optimality Equation which Q-learning learns is defined as: Q(s, a) = R(s, a) + γ max_a' Q(s', a')
+The Bellman Equation which Sarsa learns is defined as: Q(s,a) = R(s,a) + γ Q(s', a')
 
 where:
 - **Q(s, a)**: The expected return of taking action **a** in state **s**.
@@ -16,6 +17,7 @@ where:
 - **γ**: Discount factor, **0 ≤ γ < 1**.
 - **s'**: The next state.
 - **a'**: Possible actions.
+  
 ### Q-learning Principle
 
 Q-learning is an offline reinforcement learning algorithm used to estimate the value of taking a specific action in a specific state. It achieves this by learning a **Q-value** function.
