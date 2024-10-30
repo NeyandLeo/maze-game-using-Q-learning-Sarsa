@@ -9,6 +9,7 @@ The agent can move in four directions: up, down, left, right. The agent can get 
 #### Q-value Function
 
 The Bellman Optimality Equation which Q-learning learns is defined as: Q(s, a) = R(s, a) + γ max_a' Q(s', a')
+
 The Bellman Equation which Sarsa learns is defined as: Q(s,a) = R(s,a) + γ Q(s', a')
 
 where:
