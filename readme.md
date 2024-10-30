@@ -49,7 +49,7 @@ where:
 ## Differences between Q-learning and Sarsa
 
 The main difference between Q-learning and Sarsa is that Q-learning is an off-policy algorithm, while Sarsa is an on-policy algorithm.
-Which means that Q-learning only needs (S,A,R,S') to update the Q-value {actually it also uses (S,A,R,S',A') pair, but A' is not sampled. We use greedy strategy to choose the action A' based on our "experience".}, while Sarsa needs real (S,A,R,S',A') pair to update the Q-value. And this difference can be found in main.py.
+Which means that Q-learning only needs (S,A,R,S') to update the Q-value {actually it also uses (S,A,R,S',A') pair, but A' is not sampled. We use greedy strategy to choose the best action A' based on our "experience".}, while Sarsa samples real (S,A,R,S',A') pair to update the Q-value. And this difference in inplementation can be found in main.py.
 
 ## Inplementation detail
 - **state**: The state is represented by the coordinate of the agent.
